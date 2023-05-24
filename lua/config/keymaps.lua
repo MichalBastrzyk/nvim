@@ -5,6 +5,10 @@
 -- Do not yank with x
 vim.keymap.set("n", "x", '"_x')
 
+-- Center with ctrl + d and ctrl + u
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
 -- Increment/Decrement on +/-
 vim.keymap.set("n", "+", "<C-a>")
 vim.keymap.set("n", "-", "<C-x>")
