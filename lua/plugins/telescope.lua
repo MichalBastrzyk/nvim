@@ -20,5 +20,13 @@ return {
         end,
       },
     },
+    opts = {
+      extensions = {
+        file_browser = {
+          -- TODO: Change location of files to the top instead of the bottom
+          hijack_netrw = true,
+        },
+      },
+    },
   },
 }

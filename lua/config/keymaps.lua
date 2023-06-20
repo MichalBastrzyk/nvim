@@ -16,11 +16,10 @@ vim.keymap.set("n", "-", "<C-x>")
 -- Save on Ctrl + S
 vim.keymap.set("n", "<C-s>", "<cmd>:w<cr>", { silent = true })
 -- Select All on Ctrl + A
-vim.keymap.set("n", "<C-a>", "gg<S-v>G")
+-- vim.keymap.set("n", "<C-a>", "gg<S-v>G")
 
 -- Copy to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system clipboard" })
 vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank whole line to system clipboard" })
 
--- vim.keymap.set("n", "<leader>-", "<cmd>sp<cr>", { silent = true, desc = ":sp = Horizontal split" })
--- vim.keymap.set("n", "<leader>|", "<cmd>vs<cr>", { silent = true, desc = ":vs = Vertical split" })
+-- TODO: Paste from systemclipboard *once*
