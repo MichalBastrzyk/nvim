@@ -33,4 +33,12 @@ return {
       vim.fn["mkdp#util#install"]()
     end,
   },
+  -- Prettier code folds
+  {
+
+    "anuvyklack/pretty-fold.nvim",
+    config = function()
+      require("pretty-fold").setup()
+    end,
+  },
 }

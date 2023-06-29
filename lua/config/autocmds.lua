@@ -11,3 +11,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   group = highlight_group,
   pattern = "*",
 })
+
+-- This is required due to a pending issue with Telescope and entering files
+-- Issues [#559](https://github.com/nvim-telescope/telescope.nvim/issues/559) and [#1337](https://github.com/nvim-treesitter/nvim-treesitter/issues/1337)
+vim.api.nvim_create_autocmd({ "BufEnter", "BufNew", "BufWinEnter" }, {
+  group = vim.api.nvim_create_augroup("ts_fold_workaround", { clear = true }),
+  command = "set foldexpr=nvim_treesitter#foldexpr()",
+})

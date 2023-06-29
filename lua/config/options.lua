@@ -17,6 +17,13 @@ vim.opt.backspace = "start,eol,indent"
 vim.opt.path:append({ "**" })
 vim.opt.wildignore:append({ "*/node_modules/*" })
 
+-- Code folding
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldmethod = "expr"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+
 vim.opt.winblend = 0
 vim.opt.wildoptions = "pum"
 vim.opt.pumblend = 5
