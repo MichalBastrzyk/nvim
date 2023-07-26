@@ -33,7 +33,6 @@ return {
       require("github-theme").setup({
         -- To make sure these changes apply remove ~/.cache/nvim/github-theme folder
         options = {
-          -- transparent = true,
           dim_inactive = true,
           styles = {
             comments = "italic",
@@ -56,7 +55,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "github_dark_colorblind",
+      colorscheme = "github_dark_high_contrast",
     },
   },
 }

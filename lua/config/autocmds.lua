@@ -18,3 +18,10 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufNew", "BufWinEnter" }, {
   group = vim.api.nvim_create_augroup("ts_fold_workaround", { clear = true }),
   command = "set foldexpr=nvim_treesitter#foldexpr()",
 })
+
+vim.cmd([[
+augroup PodfileFileType
+  au!
+  au BufNewFile,BufRead Podfile,*.podspec set filetype=ruby
+augroup END
+]])
