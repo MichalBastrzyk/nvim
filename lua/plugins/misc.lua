@@ -23,6 +23,9 @@ return {
   },
   {
     "stevearc/oil.nvim",
+    keys = {
+      { "<C-p>", "<cmd>Oil<cr>", desc = "Oil file manager" },
+    },
     opts = {},
     -- Optional dependencies
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -38,7 +41,7 @@ return {
 
     "anuvyklack/pretty-fold.nvim",
     config = function()
-      require("pretty-fold").setup()
+      require("pretty-fold").setup({})
     end,
   },
 }

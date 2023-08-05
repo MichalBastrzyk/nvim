@@ -9,24 +9,22 @@ return {
           require("telescope").load_extension("fzf")
         end,
       },
-      {
-        "nvim-telescope/telescope-file-browser.nvim",
-        dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
-        keys = {
-          { "<C-p>", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", silent = true },
-        },
-        config = function()
-          require("telescope").load_extension("file_browser")
-        end,
-      },
+      -- {
+      --   "nvim-telescope/telescope-file-browser.nvim",
+      --   dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
+      --   keys = {
+      --     { "<C-p>", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>", silent = true },
+      --   },
+      --   config = function()
+      --     require("telescope").load_extension("file_browser")
+      --   end,
+      -- },
     },
-    opts = {
-      extensions = {
-        file_browser = {
-          -- TODO: Change location of files to the top instead of the bottom
-          hijack_netrw = true,
-        },
-      },
-    },
+    -- opts = {
+    --   extensions = {
+    --     file_browser = {
+    --       -- TODO: Change location of files to the top instead of the bottom
+    --       hijack_netrw = true,
+    --     },
   },
 }
