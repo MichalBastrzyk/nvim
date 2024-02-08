@@ -48,3 +48,4 @@ vim.g.loaded_logiPat = 1
 vim.g.loaded_rrhelper = 1
 
 vim.g.editorconfig = true
+vim.opt.signcolumn = "yes:1"
