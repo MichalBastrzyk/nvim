@@ -49,3 +49,6 @@ vim.g.loaded_rrhelper = 1
 
 vim.g.editorconfig = true
 vim.opt.signcolumn = "yes:1"
+
+vim.opt.spelllang = "en_us"
+vim.opt.spell = true
