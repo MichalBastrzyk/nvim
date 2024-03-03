@@ -24,6 +24,7 @@ vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
+vim.o.termguicolors = true
 vim.opt.winblend = 0
 vim.opt.wildoptions = "pum"
 vim.opt.pumblend = 5
@@ -50,5 +51,5 @@ vim.g.loaded_rrhelper = 1
 vim.g.editorconfig = true
 vim.opt.signcolumn = "yes:1"
 
-vim.opt.spelllang = "en_us"
-vim.opt.spell = true
+-- vim.opt.spelllang = "en_us"
+-- vim.opt.spell = true
